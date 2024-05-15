@@ -1,0 +1,98 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    justify-content: end;
+    border: 1px solid rgb(33, 32, 32);
+    background-color: silver;
+    padding-right: 1rem;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+nav .link_home {
+    text-decoration: none;
+    margin-block: .2rem;
+    padding: 0 1.5rem 0 0;
+    font-size: 16pt;
+    color: #000;
+    position: relative;
+    border: 5px outset #fff;
+    transition: 1s;
+
+
+}
+
+nav .link_home::after {
+    content: " ";
+    width: 0%;
+    height: 4px;
+    background-color: rgb(134, 134, 134);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.5s ease-in-out;
+}
+
+nav .link_home:hover {
+    color: blue;
+    background-color: #f2eeee;
+}
+
+nav .link_home:hover::after {
+    width: 100%;
+}
+
+
+/* animação do butão da div */
+div {
+    width: 400px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    background-color: aqua;
+    border: 2px solid black;
+}
+
+div #btn_menu {
+    width: 200px;
+    height: 200px;
+    border: 4px solid #ccc;
+    background: transparent;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+div .linha {
+    width: 150px;
+    height: 10px;
+    background-color: #ccc;
+    display: block;
+    margin: 30PX auto;
+    position: relative;
+    transform-origin: center;
+    transition: 0.4s;
+}
+
+div #btn_menu.ativar {
+    border: 4px solid red;
+}
+
+div #btn_menu.ativar .linha:nth-child(1) {
+    transform: translateY(40px) rotate(-45deg);
+    background-color: red;
+}
+
+div #btn_menu.ativar .linha:nth-child(3) {
+    transform: translateY(-40px) rotate(45deg);
+    background-color: red;
+}
+
+div #btn_menu.ativar .linha:nth-child(2) {
+    width: 0;
+}

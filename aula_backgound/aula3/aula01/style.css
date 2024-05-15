@@ -1,0 +1,26 @@
+/*Curso de CSS3 #05 - background - Parte 2 - background-clip, padding, border*/
+div {
+    border: 15px dotted #000;
+    padding: 50px;
+    background-image: url(./sinalMais.png);
+    margin: 2rem;
+}
+
+#div1 {
+    background-clip: border-box;
+}
+
+#div2 {
+    background-clip: padding-box;
+}
+
+#div3 {
+    background-clip: content-box;
+}
+
+.body2 {
+    background-image: url(cars.png);
+    background-repeat: no-repeat;
+    background-size: 400px;
+    background-attachment: fixed;
+}

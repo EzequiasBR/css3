@@ -1,0 +1,35 @@
+#text {
+    color: rgb(0, 255, 89);
+    font-size: 20pt;
+}
+
+.titulo {
+    color: blue;
+    font-weight: bolder;
+    font-size: 50pt;
+    background-color: rgb(122, 233, 12);
+}
+
+#d1,
+#d2,
+#d3 {
+    color: rgb(3, 3, 180);
+    font-size: 30pt;
+    border: 15px dotted #de2424;
+    padding: 0px 100px 50px 0px;
+    background-color: rgb(158, 224, 158);
+    background-image: url(sete.png);
+    background-size: 20px;
+}
+
+#d1 {
+    background-clip: padding-box;
+}
+
+#d2 {
+    background-clip: content-box;
+}
+
+#d3 {
+    background-clip: border-box;
+}

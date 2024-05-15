@@ -1,0 +1,142 @@
+body ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-family: sans-serif;
+    display: block;
+    padding: .5rem;
+    border: 3px inset rgba(0, 0, 0, .0);
+}
+
+#menu a:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+    border: 3px inset rgba(0, 0, 0, .2);
+}
+
+a:hover {
+    color: rgb(227, 128, 47);
+}
+
+#logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+
+}
+
+#header {
+    box-sizing: border-box;
+    height: 50px;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(235, 233, 233);
+}
+
+#menu {
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+}
+
+#btn_mobile {
+    display: none;
+}
+
+@media (max-width: 600px) {
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    #menu {
+        display: block;
+        position: absolute;
+        width: 100%;
+        top: 50px;
+        right: 0;
+        background: rgb(235, 233, 233);
+        height: 0px;
+        z-index: 1000;
+        transition: .5s ease;
+        visibility: hidden;
+        overflow-y: hidden;
+    }
+
+    #nav.active #menu {
+        display: block;
+        height: calc(60vh - 50px);
+        transition: 1s;
+        visibility: visible;
+        overflow-y: auto;
+    }
+
+    #menu a {
+        padding: 1rem 0;
+        margin: 0 1rem;
+        border-bottom: 3px solid rgba(15, 15, 15, 0.05);
+
+    }
+
+    #btn_mobile {
+        display: flex;
+        font-size: 1rem;
+        border: none;
+        background: none;
+        padding: .5rem 1rem;
+        cursor: pointer;
+        gap: .6rem;
+        position: relative;
+    }
+
+    #nav.active #btn_mobile {
+        gap: .5rem;
+    }
+
+    #hamburger {
+        display: block;
+        border: 1px transparent;
+        border-top: 2px solid;
+        width: 15px;
+        padding-top: 1px;
+
+    }
+
+    #hamburger::after,
+    #hamburger::before {
+        content: " ";
+        display: block;
+        width: 15px;
+        height: 2px;
+        background: currentColor;
+        margin-top: 5px;
+        transition: 0.2s;
+        position: relative;
+    }
+
+    #nav.active #hamburger {
+        border-top-color: transparent;
+        border-block: 2px solid red;
+        border-left: 1px solid red;
+        border-right: 1px solid red;
+
+
+    }
+
+    #nav.active #hamburger::after {
+        transform: rotate(-135deg);
+        top: -7px;
+        background-color: red;
+    }
+
+    #nav.active #hamburger::before {
+        transform: rotate(135deg);
+        background-color: red;
+    }
+
+
+}

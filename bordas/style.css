@@ -1,0 +1,67 @@
+body{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   min-height: 100vh;
+}
+
+#d1{
+   width: 200px;
+   height: 200px;
+   background-color: black;
+   border-bottom: rgb(252, 133, 6)  ;
+   border-right: red ;
+   border-left: rgb(30, 255, 0) ;
+   border-top: rgb(4, 0, 255) ;
+   border-width: 10px;
+   margin: .5rem;
+   border-style: dashed;
+}
+#d2{
+   width: 200px;
+   height: 200px;
+   background-color: black;
+   border-bottom: rgb(252, 133, 6) ;
+   border-right: red;
+   border-left: rgb(30, 255, 0);
+   border-top: rgb(4, 0, 255);
+   border-width: 10px;
+   margin: .5rem;
+   border-style:dotted;
+}
+#d3{
+   width: 200px;
+   height: 200px;
+   background-color: black;
+   border-bottom: rgb(252, 133, 6) ;
+   border-right: red;
+   border-left: rgb(30, 255, 0);
+   border-top: rgb(4, 0, 255);
+   border-width: 10px;
+   margin: .5rem;
+   border-style: double;
+}
+#d4{
+   width: 200px;
+   height: 200px;
+   background-color: black;
+   border-bottom: rgb(252, 133, 6) ;
+   border-right: red;
+   border-left: rgb(30, 255, 0);
+   border-top: rgb(4, 0, 255);
+   border-width: 10px;
+   margin: .5rem;
+   border-style:groove;
+}
+#d5{
+   width: 200px;
+   height: 200px;
+   background-color: black;
+   border-bottom: rgb(252, 133, 6) ;
+   border-right: red;
+   border-left: rgb(30, 255, 0);
+   border-top: rgb(4, 0, 255);
+   border-width: 10px;
+   margin: .5rem;
+   border-style:outset;
+}
